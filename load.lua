@@ -6,7 +6,7 @@ request = (syn and syn.request) or (http and http.request) or http_request or (f
 if not game:IsLoaded() then game.Loaded:Wait() end
 
 local a = request({
-    --Url = "https://raw.githubusercontent.com/pri4c1lla/Loader/main/folder"..fuckyou..".lua",
+    --Url = "https://raw.githubusercontent.com/Pri4c1lla/luau/refs/heads/main/"..fuckyou..".lua",
     Method = "GET"
 })
 if a.StatusCode == 200 then
