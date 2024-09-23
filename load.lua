@@ -13,6 +13,5 @@ if a.StatusCode == 200 then
     print("Loading main(script)")
     loadstring(a.Body)()
 else
-    print("แย่วะ. "..StatusCode)
     game.StarterGui:SetCore("SendNotification", {Icon = "rbxassetid://9419562118";Title = "Script is No Longer", Text = "",})
 end
