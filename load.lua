@@ -1,17 +1,28 @@
-getgenv().AuthTime = tick()
+-- Some Script Are Open Source
 
-fuckyou = (game.PlaceId) or (game.JobId) or game.gameId
-request = (syn and syn.request) or (http and http.request) or http_request or (fluxus and fluxus.request) or request
+local game_list = {
+    -- ninja legends
+    ["1335695570"] = "https://raw.githubusercontent.com/Pri4c1lla/Storage/refs/heads/main/Source/Ninja%20Legends.lua",
 
-if not game:IsLoaded() then game.Loaded:Wait() end
+    -- Zombie Merge Tycoon
+    ["3997370929"] = "https://raw.githubusercontent.com/Pri4c1lla/Storage/refs/heads/main/Source/Zombie%20Merge%20Tycoon.lua"
+}
 
-local a = request({
-    Url = "https://raw.githubusercontent.com/Pri4c1lla/luau/refs/heads/main/"..fuckyou..".lua",
-    Method = "GET"
-})
-if a.StatusCode == 200 then
-    print("Loading main(script)")
-    loadstring(a.Body)()
-else
-    game.StarterGui:SetCore("SendNotification", {Icon = "rbxassetid://9419562118";Title = "Script is No Longer", Text = "",})
+PlaceId, JobId, GameId = game.PlaceId, game.JobId, game.gameId
+
+for ID, url in next, (game_list) do
+    if string.find(ID,tostring(GameId)) or string.match(ID,tostring(GameId)) then
+        if url ~= nil then
+            local s,e = pcall(function() loadstring(game:HttpGet(url,true))(); end)
+            if s then
+                getgenv().AuthTime = tick()
+                warn("Shion✨ Success to load!")
+            end
+            if e then
+                warn("Shion✨ Failed to load!")
+                game.StarterGui:SetCore("SendNotification", {Icon = "rbxassetid://9419562118";Title = "Script Maybe Is No Longer", Text = "",})
+            	break;
+            end
+        end
+    end
 end
