@@ -20,7 +20,7 @@ for ID, url in next, (game_list) do
             end
             if e then
                 warn("Shion✨ Failed to load!")
-                game.StarterGui:SetCore("SendNotification", {Icon = "rbxassetid://9419562118";Title = "Script Maybe Is No Longer", Text = "",})
+                game.StarterGui:SetCore("SendNotification", {Icon = "rbxassetid://9419562118";Title = "Failed To Load, Error Below Here.", Text = e,})
             	break;
             end
         end
