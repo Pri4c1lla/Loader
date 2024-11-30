@@ -2,10 +2,13 @@
 
 local game_list = {
     -- ninja legends
-    ["1335695570"] = "https://raw.githubusercontent.com/Pri4c1lla/Storage/refs/heads/main/Source/Ninja%20Legends.lua",
+    ["1335695570"] = "https://raw.githubusercontent.com/Pri4c1lla/roblox-projects/main/Source/Ninja%20Legends.lua",
 
     -- Zombie Merge Tycoon
-    ["3997370929"] = "https://raw.githubusercontent.com/Pri4c1lla/Storage/refs/heads/main/Source/Zombie%20Merge%20Tycoon.lua"
+    ["3997370929"] = "https://raw.githubusercontent.com/Pri4c1lla/roblox-projects/main/Source/Zombie%20Merge%20Tycoon.lua",
+
+    -- Merge Toy
+    ["6483696355"] = "https://raw.githubusercontent.com/Pri4c1lla/roblox-projects/main/Source/Merge%20Toy.lua"
 }
 
 PlaceId, JobId, GameId = game.PlaceId, game.JobId, game.gameId
