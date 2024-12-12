@@ -8,7 +8,10 @@ local game_list = {
     ["3997370929"] = "https://raw.githubusercontent.com/Pri4c1lla/roblox-projects/main/Source/Zombie%20Merge%20Tycoon.lua",
 
     -- Merge Toy
-    ["6483696355"] = "https://raw.githubusercontent.com/Pri4c1lla/roblox-projects/main/Source/Merge%20Toy.lua"
+    ["6483696355"] = "https://raw.githubusercontent.com/Pri4c1lla/roblox-projects/main/Source/Merge%20Toy.lua",
+
+    -- GEF
+    ["5216419122"] = "https://raw.githubusercontent.com/Pri4c1lla/roblox-projects/main/Source/gef.lua"
 }
 
 PlaceId, JobId, GameId = game.PlaceId, game.JobId, game.gameId
