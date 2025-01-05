@@ -1,4 +1,4 @@
--- Some Script Are Open Source
+getgenv().AuthTime = tick()
 
 local game_list = {
     -- ninja legends
@@ -21,7 +21,6 @@ for ID, url in next, (game_list) do
         if url ~= nil then
             local s,e = pcall(function() loadstring(game:HttpGet(url,true))(); end)
             if s then
-                getgenv().AuthTime = tick()
                 warn("Shion✨ Success to load!")
             end
             if e then
